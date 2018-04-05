@@ -203,11 +203,40 @@
     <Compile Include="Migrations\201804051208245_InitialMigration1.Designer.cs">
       <DependentUpon>201804051208245_InitialMigration1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804051217232_isSubscribedToNewsletter.cs" />
+    <Compile Include="Migrations\201804051217232_isSubscribedToNewsletter.Designer.cs">
+      <DependentUpon>201804051217232_isSubscribedToNewsletter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804051225000_AddmemberrshipType.cs" />
+    <Compile Include="Migrations\201804051225000_AddmemberrshipType.Designer.cs">
+      <DependentUpon>201804051225000_AddmemberrshipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804051230579_populateMembershipTpes.cs" />
+    <Compile Include="Migrations\201804051230579_populateMembershipTpes.Designer.cs">
+      <DependentUpon>201804051230579_populateMembershipTpes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804051242334_SetDataAnnotationsToCustomerClass.cs" />
+    <Compile Include="Migrations\201804051242334_SetDataAnnotationsToCustomerClass.Designer.cs">
+      <DependentUpon>201804051242334_SetDataAnnotationsToCustomerClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804051310354_addNameToMembershipType.cs" />
+    <Compile Include="Migrations\201804051310354_addNameToMembershipType.Designer.cs">
+      <DependentUpon>201804051310354_addNameToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804051311480_PopulateTheMembershipTypes.cs" />
+    <Compile Include="Migrations\201804051311480_PopulateTheMembershipTypes.Designer.cs">
+      <DependentUpon>201804051311480_PopulateTheMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804051418546_addBirthdateToCustomerClass.cs" />
+    <Compile Include="Migrations\201804051418546_addBirthdateToCustomerClass.Designer.cs">
+      <DependentUpon>201804051418546_addBirthdateToCustomerClass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -332,6 +361,27 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201804051208245_InitialMigration1.resx">
       <DependentUpon>201804051208245_InitialMigration1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804051217232_isSubscribedToNewsletter.resx">
+      <DependentUpon>201804051217232_isSubscribedToNewsletter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804051225000_AddmemberrshipType.resx">
+      <DependentUpon>201804051225000_AddmemberrshipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804051230579_populateMembershipTpes.resx">
+      <DependentUpon>201804051230579_populateMembershipTpes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804051242334_SetDataAnnotationsToCustomerClass.resx">
+      <DependentUpon>201804051242334_SetDataAnnotationsToCustomerClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804051310354_addNameToMembershipType.resx">
+      <DependentUpon>201804051310354_addNameToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804051311480_PopulateTheMembershipTypes.resx">
+      <DependentUpon>201804051311480_PopulateTheMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804051418546_addBirthdateToCustomerClass.resx">
+      <DependentUpon>201804051418546_addBirthdateToCustomerClass.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
