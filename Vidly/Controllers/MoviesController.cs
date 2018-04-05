@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System;
+using System.Web.Mvc;
 using Vidly.Models;
 
 namespace Vidly.Controllers
@@ -12,12 +13,32 @@ namespace Vidly.Controllers
             {
                 Name = "Tommy Boy"
             };
-            //return View(movie);
-            //return Content("Hello World");
-            //return HttpNotFound();
-            //return new EmptyResult();
-            return RedirectToAction("Index", "Home", new{page= 1, sortBy="name"});
+            return View(movie);
+            
 
+        }
+
+        public ActionResult Edit(int Id)
+        {
+            return Content("id=" + Id);
+        }
+
+
+        // /Movies
+        public ActionResult Index(int? pageIndex, string sortBy)
+        {
+            if (!pageIndex.HasValue)
+                pageIndex = 1;
+
+            if (String.IsNullOrWhiteSpace(sortBy))
+                sortBy = "Name";
+
+            return Content(String.Format("pageIndex={0}&sortBy={1}", pageIndex, sortBy));
+        }
+        [Route("movies/released/{year:regex(\\d{4})}/{month:regex(\\d{2}):range(1,12)}")]
+        public ActionResult ByReleaseDate(int year, int month)
+        {
+            return Content(year + "/" + month);
         }
     }
 }
