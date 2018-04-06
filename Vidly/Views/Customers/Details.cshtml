@@ -19,6 +19,15 @@
                 Membership Type: @Model.MembershipType.Name
             </div>
 
+            @if (Model.Birthdate.HasValue)
+    {
+        <div class="list-group-item">
+            Date Of Birth: @Model.Birthdate.Value.ToShortDateString()
+        </div>
+            }
+
+      
+
         </div>
     </div>
 
