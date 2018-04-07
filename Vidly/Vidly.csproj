@@ -211,6 +211,18 @@
     <Compile Include="Migrations\201804060755388_setMembershipType.Designer.cs">
       <DependentUpon>201804060755388_setMembershipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804070911057_FormValidation.cs" />
+    <Compile Include="Migrations\201804070911057_FormValidation.Designer.cs">
+      <DependentUpon>201804070911057_FormValidation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804071009562_validationSummary.cs" />
+    <Compile Include="Migrations\201804071009562_validationSummary.Designer.cs">
+      <DependentUpon>201804071009562_validationSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804071116516_UpdatedMovie.cs" />
+    <Compile Include="Migrations\201804071116516_UpdatedMovie.Designer.cs">
+      <DependentUpon>201804071116516_UpdatedMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -218,6 +230,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Genre.cs" />
+    <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -353,6 +366,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804060755388_setMembershipType.resx">
       <DependentUpon>201804060755388_setMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804070911057_FormValidation.resx">
+      <DependentUpon>201804070911057_FormValidation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804071009562_validationSummary.resx">
+      <DependentUpon>201804071009562_validationSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804071116516_UpdatedMovie.resx">
+      <DependentUpon>201804071116516_UpdatedMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
