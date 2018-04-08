@@ -199,29 +199,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804060738467_initial.cs" />
-    <Compile Include="Migrations\201804060738467_initial.Designer.cs">
-      <DependentUpon>201804060738467_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201804080834301_initialMigration.cs" />
+    <Compile Include="Migrations\201804080834301_initialMigration.Designer.cs">
+      <DependentUpon>201804080834301_initialMigration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201804060746406_initial2.cs" />
-    <Compile Include="Migrations\201804060746406_initial2.Designer.cs">
-      <DependentUpon>201804060746406_initial2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804060755388_setMembershipType.cs" />
-    <Compile Include="Migrations\201804060755388_setMembershipType.Designer.cs">
-      <DependentUpon>201804060755388_setMembershipType.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804070911057_FormValidation.cs" />
-    <Compile Include="Migrations\201804070911057_FormValidation.Designer.cs">
-      <DependentUpon>201804070911057_FormValidation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804071009562_validationSummary.cs" />
-    <Compile Include="Migrations\201804071009562_validationSummary.Designer.cs">
-      <DependentUpon>201804071009562_validationSummary.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201804071116516_UpdatedMovie.cs" />
-    <Compile Include="Migrations\201804071116516_UpdatedMovie.Designer.cs">
-      <DependentUpon>201804071116516_UpdatedMovie.cs</DependentUpon>
+    <Compile Include="Migrations\201804080842196_addMembershipTypes.cs" />
+    <Compile Include="Migrations\201804080842196_addMembershipTypes.Designer.cs">
+      <DependentUpon>201804080842196_addMembershipTypes.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -358,23 +342,11 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201804060738467_initial.resx">
-      <DependentUpon>201804060738467_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804080834301_initialMigration.resx">
+      <DependentUpon>201804080834301_initialMigration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804060746406_initial2.resx">
-      <DependentUpon>201804060746406_initial2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804060755388_setMembershipType.resx">
-      <DependentUpon>201804060755388_setMembershipType.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804070911057_FormValidation.resx">
-      <DependentUpon>201804070911057_FormValidation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804071009562_validationSummary.resx">
-      <DependentUpon>201804071009562_validationSummary.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201804071116516_UpdatedMovie.resx">
-      <DependentUpon>201804071116516_UpdatedMovie.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804080842196_addMembershipTypes.resx">
+      <DependentUpon>201804080842196_addMembershipTypes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

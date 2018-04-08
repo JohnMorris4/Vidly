@@ -2,7 +2,7 @@ namespace Vidly.Migrations
 {
     using System.Data.Entity.Migrations;
 
-    public partial class initial : DbMigration
+    public partial class initialMigration : DbMigration
     {
         public override void Up()
         {
@@ -25,10 +25,19 @@ namespace Vidly.Migrations
                 c => new
                 {
                     Id = c.Byte(nullable: false),
-                    Name = c.String(),
+                    Name = c.String(nullable: false),
                     SignupFee = c.Short(nullable: false),
                     DurationInMonths = c.Byte(nullable: false),
                     DiscountRate = c.Byte(nullable: false),
+                })
+                .PrimaryKey(t => t.Id);
+
+            CreateTable(
+                "dbo.Genres",
+                c => new
+                {
+                    Id = c.Byte(nullable: false, identity: true),
+                    Name = c.String(nullable: false, maxLength: 255),
                 })
                 .PrimaryKey(t => t.Id);
 
@@ -41,21 +50,12 @@ namespace Vidly.Migrations
                     GenreId = c.Byte(nullable: false),
                     DateAdded = c.DateTime(nullable: false),
                     ReleaseDate = c.DateTime(nullable: false),
-                    NumberInstock = c.Byte(nullable: false),
-                    Genre_Id = c.Int(nullable: false),
+                    NumberInStock = c.Byte(nullable: false),
+
                 })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Genres", t => t.Genre_Id, cascadeDelete: true)
-                .Index(t => t.Genre_Id);
-
-            CreateTable(
-                "dbo.Genres",
-                c => new
-                {
-                    Id = c.Int(nullable: false, identity: true),
-                    Name = c.String(nullable: false, maxLength: 255),
-                })
-                .PrimaryKey(t => t.Id);
+                .ForeignKey("dbo.Genres", t => t.GenreId, cascadeDelete: true)
+                .Index(t => t.GenreId);
 
             CreateTable(
                 "dbo.AspNetRoles",
@@ -148,8 +148,8 @@ namespace Vidly.Migrations
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
-            DropTable("dbo.Genres");
             DropTable("dbo.Movies");
+            DropTable("dbo.Genres");
             DropTable("dbo.MembershipTypes");
             DropTable("dbo.Customers");
         }
